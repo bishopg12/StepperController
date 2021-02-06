@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
-Sheet 3 13
+Sheet 2 9
 Title "Stepper Controller"
 Date ""
 Rev "0.1"
@@ -155,38 +155,6 @@ Text HLabel 9450 4600 0    50   Output ~ 0
 Y_AXIS_~STBY_RESET
 Text HLabel 9450 4700 0    50   Output ~ 0
 Y_AXIS_STCK
-Text HLabel 9450 4900 0    50   Output ~ 0
-Z_AXIS_SDI
-Text HLabel 9450 5000 0    50   Output ~ 0
-Z_AXIS_~CS
-Text HLabel 9450 5100 0    50   Output ~ 0
-Z_AXIS_CK
-Text HLabel 9450 5200 0    50   Input ~ 0
-Z_AXIS_SDO
-Text HLabel 9450 5300 0    50   Input ~ 0
-Z_AXIS_~FLAG
-Text HLabel 9450 5400 0    50   Input ~ 0
-Z_AXIS_~BUSY~_SYNC
-Text HLabel 9450 5500 0    50   Output ~ 0
-Z_AXIS_~STBY_RESET
-Text HLabel 9450 5600 0    50   Output ~ 0
-Z_AXIS_STCK
-Wire Wire Line
-	9450 5600 9550 5600
-Wire Wire Line
-	9450 5500 9550 5500
-Wire Wire Line
-	9450 5400 9550 5400
-Wire Wire Line
-	9450 5300 9550 5300
-Wire Wire Line
-	9450 5200 9550 5200
-Wire Wire Line
-	9450 5100 9550 5100
-Wire Wire Line
-	9450 5000 9550 5000
-Wire Wire Line
-	9450 4900 9550 4900
 Wire Wire Line
 	9450 4700 9550 4700
 Wire Wire Line
@@ -279,26 +247,18 @@ Text HLabel 9450 6150 0    50   Output ~ 0
 DC_DC_X_AXIS_SYNC
 Text HLabel 9450 6250 0    50   Output ~ 0
 DC_DC_Y_AXIS_SYNC
-Text HLabel 9450 6350 0    50   Output ~ 0
-DC_DC_Z_AXIS_SYNC
 Text HLabel 9450 6550 0    50   Output ~ 0
 DC_DC_X_AXIS_ENABLE
 Text HLabel 9450 6650 0    50   Output ~ 0
 DC_DC_Y_AXIS_ENABLE
-Text HLabel 9450 6750 0    50   Output ~ 0
-DC_DC_Z_AXIS_ENABLE
 Wire Wire Line
 	9450 6150 9550 6150
 Wire Wire Line
 	9450 6250 9550 6250
 Wire Wire Line
-	9450 6350 9550 6350
-Wire Wire Line
 	9450 6550 9550 6550
 Wire Wire Line
 	9450 6650 9550 6650
-Wire Wire Line
-	9450 6750 9550 6750
 Text HLabel 11350 2400 2    50   Output ~ 0
 POWER_SCL
 Text HLabel 11350 2500 2    50   BiDi ~ 0
@@ -319,10 +279,6 @@ Text HLabel 11350 4200 2    50   Input ~ 0
 Y_ENDSTOP_0
 Text HLabel 11350 4300 2    50   Input ~ 0
 Y_ENDSTOP_1
-Text HLabel 11350 4400 2    50   Input ~ 0
-Z_ENDSTOP_0
-Text HLabel 11350 4500 2    50   Input ~ 0
-Z_ENDSTOP_1
 Wire Wire Line
 	11250 4000 11350 4000
 Wire Wire Line
@@ -331,10 +287,6 @@ Wire Wire Line
 	11250 4200 11350 4200
 Wire Wire Line
 	11250 4300 11350 4300
-Wire Wire Line
-	11250 4400 11350 4400
-Wire Wire Line
-	11250 4500 11350 4500
 Text HLabel 11350 4600 2    50   Input ~ 0
 SW
 Wire Wire Line

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
-Sheet 4 13
+Sheet 3 9
 Title "Stepper Controller"
 Date ""
 Rev "0.1"
@@ -935,56 +935,6 @@ Wire Wire Line
 	3000 4650 3250 4650
 Wire Wire Line
 	3000 4750 3250 4750
-Text HLabel 1000 6050 0    50   Output ~ 0
-Z_AXIS_SDI
-Wire Wire Line
-	1000 6050 1150 6050
-Wire Wire Line
-	1450 6050 1950 6050
-Wire Wire Line
-	1950 6050 1950 4850
-Wire Wire Line
-	1950 4850 3250 4850
-Text HLabel 1000 6500 0    50   Output ~ 0
-Z_AXIS_~CS
-Wire Wire Line
-	1000 6500 1150 6500
-Wire Wire Line
-	1450 6500 2050 6500
-Wire Wire Line
-	2050 6500 2050 4950
-Wire Wire Line
-	2050 4950 3250 4950
-Text HLabel 1000 7000 0    50   Output ~ 0
-Z_AXIS_CK
-Wire Wire Line
-	1000 7000 1150 7000
-Wire Wire Line
-	1450 7000 2150 7000
-Wire Wire Line
-	2150 7000 2150 5050
-Wire Wire Line
-	2150 5050 3250 5050
-Text HLabel 3000 5150 0    50   Input ~ 0
-Z_AXIS_SDO
-Text HLabel 3000 5250 0    50   Input ~ 0
-Z_AXIS_~FLAG
-Text HLabel 3000 5350 0    50   Input ~ 0
-Z_AXIS_~BUSY~_SYNC
-Text HLabel 3000 5450 0    50   Output ~ 0
-Z_AXIS_~STBY_RESET
-Text HLabel 3000 5550 0    50   Output ~ 0
-Z_AXIS_STCK
-Wire Wire Line
-	3000 5150 3250 5150
-Wire Wire Line
-	3000 5250 3250 5250
-Wire Wire Line
-	3000 5350 3250 5350
-Wire Wire Line
-	3000 5450 3250 5450
-Wire Wire Line
-	3000 5550 3250 5550
 Wire Wire Line
 	10200 5300 10250 5300
 Wire Wire Line
@@ -1511,51 +1461,6 @@ F 7 "0.40mm" H 1850 9050 50  0001 C CNN "Height"
 $EndComp
 $Comp
 L Resistors:swr100000000886 R?
-U 1 1 5F0208C2
-P 1300 7000
-F 0 "R?" V 913 7000 50  0000 C CNN
-F 1 "swr100000000886" H 1520 7450 50  0001 C CNN
-F 2 "Resistors:R_0402_1005Metric" H 1150 6500 50  0001 C CNN
-F 3 "" H 1300 7000 50  0001 C CNN
-F 4 "33.2" V 1004 7000 50  0000 C CNN "PartValue"
-F 5 "1%" V 1095 7000 50  0000 C CNN "Tolerance"
-F 6 "1/10W" V 1186 7000 50  0000 C CNN "Wattage"
-F 7 "0.40mm" H 1300 7000 50  0001 C CNN "Height"
-	1    1300 7000
-	0    1    1    0   
-$EndComp
-$Comp
-L Resistors:swr100000000886 R?
-U 1 1 5F020C11
-P 1300 6500
-F 0 "R?" V 913 6500 50  0000 C CNN
-F 1 "swr100000000886" H 1520 6950 50  0001 C CNN
-F 2 "Resistors:R_0402_1005Metric" H 1150 6000 50  0001 C CNN
-F 3 "" H 1300 6500 50  0001 C CNN
-F 4 "33.2" V 1004 6500 50  0000 C CNN "PartValue"
-F 5 "1%" V 1095 6500 50  0000 C CNN "Tolerance"
-F 6 "1/10W" V 1186 6500 50  0000 C CNN "Wattage"
-F 7 "0.40mm" H 1300 6500 50  0001 C CNN "Height"
-	1    1300 6500
-	0    1    1    0   
-$EndComp
-$Comp
-L Resistors:swr100000000886 R?
-U 1 1 5F020FDB
-P 1300 6050
-F 0 "R?" V 913 6050 50  0000 C CNN
-F 1 "swr100000000886" H 1520 6500 50  0001 C CNN
-F 2 "Resistors:R_0402_1005Metric" H 1150 5550 50  0001 C CNN
-F 3 "" H 1300 6050 50  0001 C CNN
-F 4 "33.2" V 1004 6050 50  0000 C CNN "PartValue"
-F 5 "1%" V 1095 6050 50  0000 C CNN "Tolerance"
-F 6 "1/10W" V 1186 6050 50  0000 C CNN "Wattage"
-F 7 "0.40mm" H 1300 6050 50  0001 C CNN "Height"
-	1    1300 6050
-	0    1    1    0   
-$EndComp
-$Comp
-L Resistors:swr100000000886 R?
 U 1 1 5F021408
 P 1300 5600
 F 0 "R?" V 913 5600 50  0000 C CNN
@@ -1898,27 +1803,6 @@ Wire Wire Line
 	6100 2850 6100 1350
 Wire Wire Line
 	6100 1350 7000 1350
-$Comp
-L Resistors:swr100000000886 R?
-U 1 1 5F241484
-P 7150 1800
-F 0 "R?" V 6763 1800 50  0000 C CNN
-F 1 "swr100000000886" H 7370 2250 50  0001 C CNN
-F 2 "Resistors:R_0402_1005Metric" H 7000 1300 50  0001 C CNN
-F 3 "" H 7150 1800 50  0001 C CNN
-F 4 "33.2" V 6854 1800 50  0000 C CNN "PartValue"
-F 5 "1%" V 6945 1800 50  0000 C CNN "Tolerance"
-F 6 "1/10W" V 7036 1800 50  0000 C CNN "Wattage"
-F 7 "0.40mm" H 7150 1800 50  0001 C CNN "Height"
-	1    7150 1800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5900 2950 6200 2950
-Wire Wire Line
-	6200 2950 6200 1800
-Wire Wire Line
-	6200 1800 7000 1800
 Wire Wire Line
 	5900 3050 6300 3050
 Wire Wire Line
@@ -1930,12 +1814,6 @@ Wire Wire Line
 Wire Wire Line
 	6400 2000 7000 2000
 Wire Wire Line
-	5900 3250 6500 3250
-Wire Wire Line
-	6500 3250 6500 2100
-Wire Wire Line
-	6500 2100 7000 2100
-Wire Wire Line
 	7300 900  7500 900 
 Text HLabel 7500 900  2    50   Output ~ 0
 DC_DC_X_AXIS_SYNC
@@ -1945,16 +1823,10 @@ Text HLabel 7500 1350 2    50   Output ~ 0
 DC_DC_Y_AXIS_SYNC
 Wire Wire Line
 	7300 1350 7500 1350
-Text HLabel 7500 1800 2    50   Output ~ 0
-DC_DC_Z_AXIS_SYNC
-Wire Wire Line
-	7300 1800 7500 1800
 Text HLabel 7000 1900 2    50   Output ~ 0
 DC_DC_X_AXIS_ENABLE
 Text HLabel 7000 2000 2    50   Output ~ 0
 DC_DC_Y_AXIS_ENABLE
-Text HLabel 7000 2100 2    50   Output ~ 0
-DC_DC_Z_AXIS_ENABLE
 Text HLabel 6250 6550 2    50   Output ~ 0
 POWER_SCL
 Text HLabel 6250 6650 2    50   BiDi ~ 0

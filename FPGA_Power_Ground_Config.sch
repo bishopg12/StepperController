@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
-Sheet 5 13
+Sheet 5 9
 Title "Stepper Controller"
 Date ""
 Rev "0.1"
