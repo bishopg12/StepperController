@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
-Sheet 5 9
+Sheet 9 11
 Title "Stepper Controller"
 Date "2020-06-15"
 Rev "0.1"
@@ -368,21 +368,21 @@ Wire Wire Line
 Wire Wire Line
 	3300 6400 3300 6500
 Text Label 4500 6100 0    50   ~ 0
-+12V_AUX_~ALERT
+~ALERT
 Text Label 4500 2600 0    50   ~ 0
-+12V_AUX_~ALERT
+~ALERT
 Text HLabel 5500 2600 2    50   Output ~ 0
-+12V_AUX_~ALERT
+POWER_MON_~ALERT
 Wire Wire Line
 	4200 2300 5500 2300
 Text Label 4500 2400 0    50   ~ 0
-+12V_AUX_SDA
+SDA
 Text Label 4500 2300 0    50   ~ 0
-+12V_AUX_SCL
+SCL
 Text HLabel 5500 2300 2    50   Input ~ 0
-+12V_AUX_SCL
+POWER_MON_SCL
 Text HLabel 5500 2400 2    50   BiDi ~ 0
-+12V_AUX_SDA
+POWER_MON_SDA
 Wire Wire Line
 	4200 2400 5500 2400
 Wire Wire Line
@@ -394,9 +394,9 @@ Wire Wire Line
 Wire Wire Line
 	4200 6100 5500 6100
 Text Label 4500 5800 0    50   ~ 0
-+12V_AUX_SCL
+SCL
 Text Label 4500 5900 0    50   ~ 0
-+12V_AUX_SDA
+SDA
 $Comp
 L Capacitors:swr100000000824 C?
 U 1 1 5F5DC7D5
@@ -687,8 +687,6 @@ Text HLabel 10500 7400 0    50   Output ~ 0
 Y_ENDSTOP_0
 Text HLabel 15000 7400 2    50   Output ~ 0
 Y_ENDSTOP_1
-Text HLabel 15000 7500 2    50   Output ~ 0
-Z_ENDSTOP_1
 $Comp
 L power:GND #PWR?
 U 1 1 5F4BDF10

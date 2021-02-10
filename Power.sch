@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
-Sheet 6 9
+Sheet 5 11
 Title ""
 Date ""
 Rev ""
@@ -13,95 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L ICs~-~Temperature~Sensors~-~Analog~and~Digital~Output:swr1000000001755 U?
-U 1 1 5F29A77E
-P 2050 1450
-F 0 "U?" H 2075 1865 50  0000 C CNN
-F 1 "swr1000000001755" H 2900 2100 50  0001 C CNN
-F 2 "ICs:6-UFBGA" H 2050 1450 50  0001 C CNN
-F 3 "" H 2050 1450 50  0001 C CNN
-F 4 "TMP108AIYFFR" H 2075 1774 50  0000 C CNN "PartValue"
-F 5 "0.625mm" H 2050 1450 50  0001 C CNN "Height"
-	1    2050 1450
-	1    0    0    -1  
-$EndComp
-Text HLabel 1600 1450 0    50   Input ~ 0
-TMP_SCL
-Text HLabel 1600 1600 0    50   BiDi ~ 0
-TMP_SDA
-Text HLabel 2550 1450 2    50   Input ~ 0
-TMP_A0
-Text HLabel 2550 1600 2    50   Output ~ 0
-TMP_~ALERT
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5F29AC87
-P 3150 1200
-F 0 "#PWR?" H 3150 1050 50  0001 C CNN
-F 1 "+3.3V" H 3165 1373 50  0000 C CNN
-F 2 "" H 3150 1200 50  0001 C CNN
-F 3 "" H 3150 1200 50  0001 C CNN
-	1    3150 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F29AE83
-P 2550 1850
-F 0 "#PWR?" H 2550 1600 50  0001 C CNN
-F 1 "GND" H 2555 1677 50  0000 C CNN
-F 2 "" H 2550 1850 50  0001 C CNN
-F 3 "" H 2550 1850 50  0001 C CNN
-	1    2550 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Capacitors:swr100000000824 C?
-U 1 1 5F29B135
-P 3150 1550
-F 0 "C?" H 3265 1687 50  0000 L CNN
-F 1 "swr100000000824" H 3330 1050 50  0001 C CNN
-F 2 "Capacitors:C_0402_1005Metric" H 3150 2100 50  0001 C CNN
-F 3 "" H 3150 1550 50  0001 C CNN
-F 4 "0.1uF" H 3265 1596 50  0000 L CNN "PartValue"
-F 5 "16V" H 3265 1505 50  0000 L CNN "Voltage"
-F 6 "5%" H 3265 1414 50  0000 L CNN "Tolerance"
-	1    3150 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2450 1450 2550 1450
-Wire Wire Line
-	2450 1600 2550 1600
-Wire Wire Line
-	2550 1850 2550 1750
-Wire Wire Line
-	2550 1750 2450 1750
-Wire Wire Line
-	1700 1450 1600 1450
-Wire Wire Line
-	1600 1600 1700 1600
-$Comp
-L power:GND #PWR?
-U 1 1 5F29BA23
-P 3150 1800
-F 0 "#PWR?" H 3150 1550 50  0001 C CNN
-F 1 "GND" H 3155 1627 50  0000 C CNN
-F 2 "" H 3150 1800 50  0001 C CNN
-F 3 "" H 3150 1800 50  0001 C CNN
-	1    3150 1800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3150 1800 3150 1700
-Wire Wire Line
-	3150 1400 3150 1300
-Wire Wire Line
-	3150 1300 2450 1300
-Wire Wire Line
-	3150 1200 3150 1300
-Connection ~ 3150 1300
 $Comp
 L Connectors:swr1000000001726 J?
 U 1 1 5F2B1BE0
@@ -290,8 +201,8 @@ Wire Wire Line
 Connection ~ 2900 4900
 Wire Wire Line
 	2900 4900 2900 5000
-Text Notes 2300 4900 0    50   ~ 0
-Address: 0x40
+Text Notes 1450 4950 0    50   ~ 0
+Power Monitor Address: 0x40\nTemperature Monitor Address: 0x48
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5F2A6B3D
@@ -312,8 +223,8 @@ Wire Wire Line
 Connection ~ 6900 4800
 Wire Wire Line
 	6900 4800 7000 4800
-Text Notes 6200 4950 0    50   ~ 0
-Address: 0x45
+Text Notes 5100 4950 0    50   ~ 0
+Power Monitor Address: 0x45\nTemperature Monitor Address: 0x49
 Wire Wire Line
 	13500 2100 13500 2300
 $EndSCHEMATC
